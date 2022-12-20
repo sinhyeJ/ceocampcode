@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meat charset="utf-8">
+   <title>박스만들기</title>
+    <style>
+      .square{
+        border: 3px solid #D5D5D5;
+        width: 500px;
+        height: 500px;
+        position: relative;
+      }
+
+      .box{
+        width: 100px;
+        height: 100px;
+        background-color : #5AAEFF;
+      }
+
+      .lefttop{float: left; }
+      .righttop{float: right; }
+      .leftdown{position: absolute; top: 400px; left: 0; }
+      .rightdown{position: absolute; top: 400px; right: 0; }
+      .middle{position: absolute; top: 200px; left: 200px; }
+     </style>
+
+  </head>
+
+  <body>
+    <div class="square">
+      <div class="box lefttop"></div>
+      <div class="box righttop"></div>
+      <div class="box middle"></div>
+      <div class="box leftdown"></div>
+      <div class="box rightdown"></div>
+    </div>
+  </body>
+</html>

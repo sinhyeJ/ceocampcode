@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+ <head>
+   <meta charset="UTF-8">
+   <title>CSS Combinators</title>
+   <style>
+      div { border : 3px solid red; }
+      div p { background-color: yellow; }
+   </style>
+</head>
+
+<body>
+  <h1>자손 선택자를 이용한 선택</h1>
+  <p>div 태그 외부의 p 태그는 선택되지 않습니다.</p>
+  <div>
+    <p>div 태그 내부의 p 태그만 선택됩니다!</p>
+    <p>div 태그 내부의 p 태그만 선택됩니다!</p>
+    <p>div 태그 내부의 p 태그만 선택됩니다!</p>
+  </div>
+  <p>div 태그 외부의 p 태그는 선택되지 않습니다.</p>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <html lang="ko">
+  <head>
+    <meta http-equiz="content-type" content="text/html" charset="UTF-8"/>
+    <script src="https://code.jquery.com/jquery-latest.min.js">
+
+    <script>
+      $(document).ready(()=>{
+      
+
+
+
+
+  </head>
+  <body>
+    <div id="one" style="background-color: blue;"> 안녕하세요.</div>
+
+    <script>
+
+      document.getElementById('one').innerHTML = "개발부트캠프";
+      document.getElementById('one').style.backgroundColor="red";
+    </script>
+
+  </body>
+</html>

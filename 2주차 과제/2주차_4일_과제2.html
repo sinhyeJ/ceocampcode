@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JQuery Element Access</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(()=> {
+        $("button").on("click", ()=> {
+
+          $("#list").append("<li>새로 추가된 아이템이에요!</li>");
+        });
+      });
+
+    </script>
+
+  </head>
+
+  <body>
+
+      <h1>.append() 메소드</h1>
+      <ul id="list">
+        <li>첫 번째 아이템이에요!</li>
+        <li>두 번째 아이템이에요!</li>
+        <li>세 번째 아이템이에요!</li>
+        <li>< 번째 아이템이에요!</li>
+
+      </ul>
+      <button>보내기</button>
+  </body>
+</html>

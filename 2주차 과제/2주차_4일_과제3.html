@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+ <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JQuery Element Insert</title>
+      <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script>
+        $(function() {
+            $("button").on("click", fucntion() {
+                $("li").prepend("<li>새로 추가된 콘텐츠에요!</li>");
+                });
+            });
+      </script>
+  </head>
+
+  <body>
+
+    <h1>.prepend() 메소드</h1>
+    <ul>
+      <li>첫 번째 아이템이에요!</li>
+      <li>두 번째 아이템이에요!</li>
+      <li>세 번째 아이템이에요!</li>
+    </ul>
+    <button>아이템 추가</button>
+
+  </body>
+</html>

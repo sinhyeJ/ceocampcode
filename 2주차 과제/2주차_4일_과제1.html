@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JQuery Element Access</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(()=> {
+        $("button").on("click", ()=> {
+
+            let newText = $("h1").html();
+            $("#text").html(newText);
+
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <h1>안녕하세요</h1>
+    <p>아래 버튼을 누르면 다음 단락에 새로운 텍스트를 설정할 수 있어요!!</p>
+    <button>새로운 텍스트!</button>
+    <p id="text"></p>
+  </body>
+
+</html>

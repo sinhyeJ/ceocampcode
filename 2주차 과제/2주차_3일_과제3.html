@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+ <head>
+   <meta charset="UTF-8">
+   <title>CSS Combinators</title>
+   <style>
+    div { border: 3px solid red; }
+    div > p { background-color: yellow; }
+  </style>
+</head>
+
+<body>
+    <h1> 자식 선택자를 이용한 선택</h1>
+    <p>div 태그 외부의 p 태그는 선택되지 않습니다.</p>
+
+    <div>
+      <p>div 태그 바로 밑에 존재하는 p 태그만 선택됩니다!</p>
+      <p>div 태그 바로 밑에 존재하는 p 태그만 선택됩니다!</p>
+      <span>
+        <p>이 태그는 span 태그로 둘러 쌓여 있습니다.<br>
+          따라서 div 태그 바로 밑에 존재하는 p 태그가 아니므로 선택되지 않습니다.
+        </p>
+      </span>
+    </div>
+    <p> div 태그 외부의 p 태그는 선택되지 않습니다.  </p>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>CEO개발부트캠</title>
+
+    <style>
+      #ceo{
+        background-color:black;
+        color:white;
+      }
+      #lifehacking{
+        width:500px;
+      }
+    </style>
+
+
+    <script>
+      $(document).ready(())=>{
+
+        $("#ceo").on("click",()=>{
+          x=3;
+          y=5;
+
+          alert(x/y);
+
+        });
+
+        fucntion life(x){
+          return 3*x+1;
+        }
+
+        z=life(3);
+        alert(z);
+
+
+      });
+    </script>
+
+
+  </head>
+
+  <body>
+    <div id="ceo">안녕하세요.</div>
+    <input id="lifehacking" type="text" placeholder="메시지를 입력해주세요.">
+
+
+
+  </body>
+
+
+</html>

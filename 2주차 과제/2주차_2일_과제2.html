@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html lang="ko">
+  <head>
+    <meta http-equiz="content-type" content="text/html" charset="UTF-8"/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+      $(document).ready(()=>{
+
+        $("#btn").on("click",()=>{
+            $("#one").html("개발부트캠프");
+            $("#one").css("backgroundColor","red");
+            $("#one").css("color","white");
+         });
+
+       });
+
+    </script>
+  </head>
+
+    <body>
+      <div id="one" style="background-color: blue;"> 안녕하세요.</div>
+      <div id="btn" style="background-color: blue; float:left; color:white"> 버튼</div>
+
+    </body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Json 예제 실습</title>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+      <script>
+         $(document).ready(()=>{
+            let byul = ["신혜", 35, 171, 54, "yon@naver.com", "O", ];
+
+            let byulJson = {
+              name : "신혜",
+              age : 35,
+              height : 171,
+              weight : 54,
+              email : "yon@naver.com",
+              type : "O"
+            };
+
+            let userList = [
+              {name:"이한별",age:33,type:"O"},
+              {name:"김정규",age:31,type:"A"},
+              {name:"황호조",age:35,type:"B"},
+              {name:"김수신",age:34,type:"AB"},
+              {name:"김정무",age:32,type:"O"},
+              {name:"이주린",age:39,type:"A"},
+            ];
+
+            for(i=0;i<6;i++){
+              $("#userList").append("<div>"+userList[i]["name"]+userList[i]["age"]+userList[i]["type"]+"</div>");
+            }
+
+         });
+
+      </script>
+
+  </head>
+
+  <body>
+    <div id="userList">
+
+    </div>
+
+  </body>
+
+ </html>
