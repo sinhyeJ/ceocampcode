@@ -15,6 +15,21 @@
 
       $(document).ready(()=>{
 
+        function fruitsCall(){
+          $.ajax({
+            url:"http://54.180.30.215/",
+            type: "POST",
+            dataType: "json"
+          })
+          .done(function(json) {
+            console.log(json);
+          });
+        }
+
+        $("#getFruits").on("click",()=>{
+          fruitsCall();
+        })
+
         function joinCall(){
           let idvalue = $("#idvalue").val();
           let pwdvalue = $("#pwdvalue").val();
@@ -104,6 +119,7 @@
     <button id="join">회원가입</button>
     <button id="login">로그인 </button>
     <button id="send">메시지보내기 </button>
+    <button id="getFruits">과일가져오기 </button>
 
     <div id="chatList">
       채팅 내용
